@@ -7,6 +7,7 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
+  background-color: slategray;
 }
 
 header {
@@ -32,14 +33,19 @@ header {
   font-size: 17px;}
 
 .topnav ul {
-  diplay flex: ;
+  display:flex;
   gap: 2rem;
   list-style:none;
 }
 
 .image-banner img {}
+h1 {
+  color: lightblue;
+}
 h2,
-h3,
+h3 {color: indigo;
+}
+
 h4,
 h5,
 h6 {
@@ -48,4 +54,36 @@ h6 {
 
 p {
   margin: 0;
+  color: antiquewhite;
+
+.grid-container {
+  display: grid;
+  gap: 1em;
+  grid-template-areas:
+  "one"
+  "two"
+  "three"
+  "four"
+  "five";
+}
+
+.element:nth-child(1){
+  grid-area: one;
+}
+
+.element:nth-child(2){
+  grid-area: two;
+}
+
+.element:nth-child(3){
+  grid-area: three;
+}
+
+.element:nth-child(4){
+  grid-area: four;
+}
+
+.element:nth-child(5){
+  grid-area: five;
+}
 }
