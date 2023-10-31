@@ -1,4 +1,4 @@
-{
+*{
   box-sizing: border-box;
 }
 
@@ -59,6 +59,8 @@ h1 {background-color:rgb(36, 131, 248);
 }
 .image-banner {
   position: relative;
+  max-height: 250px;
+  height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,11 +82,106 @@ h1 {background-color:rgb(36, 131, 248);
 }
 .flex {max-width: 100%;}
 
+.grid-container {
+  display: grid;
+  background-color: black;
+  gap: 10px;
+  align-items: center;
+  grid-auto-columns: 25% 30% 30%;
+  grid-template-rows: 300px auto 1fr 1fr 1fr;
+  
+}
+
+.grid-item1 {
+  max-height: 1294px;
+  width: auto;
+  grid-area: 1/1/6/2;
+}
+.grid-item2 {
+  grid-area:1/2/2/4;
+  m
+  
+}
+.grid-item3 {
+  grid-area:2/2/3/4;
+  
+}
+.grid-item4 {
+  grid-area:3/2/4/3;
+  max-height: 140px;
+  max-width: 537px;
+}
+.grid-item5 {
+  grid-area:3/3/4/4;
+  max-height: 140px;
+  max-width: 537px;
+}
+.grid-item6 {
+  grid-area:4/2/5/3;
+  max-height: 140px;
+  max-width: 537px;
+}
+.grid-item7 {
+  grid-area:4/3/5/4 ;
+  max-height: 140px;
+  max-width: 537px;
+}
+.grid-item8 {
+  grid-area:5/2/6/4 ;
+
+}
 
 
-.card1 {}
 
-.card2 {}
+.aside {
+  max-width: 25%;
+  background-color: aliceblue;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: baseline;
+  text-align: end;
+  
+}
+
+.aside-title {
+  position: absolute;
+  font-size: 24px;
+  font-weight: 200;
+  color: #8a8484;
+  font-style: italic;
+  z-index: 0;
+ 
+}
+.photo-id {
+  display: block;
+  height: auto;
+  max-width:200px;
+  border-radius: 100%;
+  z-index: 1;
+  justify-content: center;
+}
+
+
+.card1 {
+  object-fit: cover;
+}
+
+.card2 {
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 320px) {
+  .hero-banner {
+    display:block;
+  }
+ 
+  .grid-container {
+    display:block;
+
+  }
+
 
 /* 
 {
