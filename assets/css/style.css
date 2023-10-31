@@ -7,17 +7,16 @@ body {
   padding: 0;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   line-height: 1.5;
-  background-color: rgb(194, 211, 228);
+  background-color: rgb(115, 115, 116);
 }
 .header {
-  display: flex;
-  background-color: rgb(36, 131, 248);
+  background-color: rgb(89, 89, 90);
   width: 100%;
-  margin: 10vh;
+  margin:0vh;
 }
 
-h1 {background-color:rgb(36, 131, 248);
-      color: rgb(30, 65, 103);}
+h1 {background-color:rgb(89, 89, 90);
+      color: rgb(206, 208, 211);}
 
 .topnav {
         margin-left: 3%;
@@ -25,13 +24,14 @@ h1 {background-color:rgb(36, 131, 248);
 
 .topnav ul {
   display:flex;
+  justify-content: end;
   gap: 2rem;
   list-style:none;
 }
 .topnav a {
   float:right;
-  color:rgb(14, 46, 64);
-  text-align: center;
+  color:rgb(37, 37, 37);
+  text-align:right
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;}
@@ -43,45 +43,68 @@ h1 {background-color:rgb(36, 131, 248);
 }
 
 .hero-banner {
+  padding-top: 10%;
   display:flex;
   position:relative;
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-end;
   width:100%;
-  max-height:80vh;
-}
-.title {
-  font-size: 38px;
-  font-weight: 700;
-  color: #342ca1;
-  padding: 20px 30px 20px 0;  
-}
-.image-banner {
-  position: relative;
   max-height: 250px;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 0;
-  }
-.image-banner img {
-  display: block;
-  width: 100%;
-  height: auto;
 }
+
+.image-banner {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  max-height: 250px;
+  align-items: center;
+  }
+
 .title {
   position: absolute;
-  z-index: 1;
   font-size: 38px;
   font-weight: 700;
-  color: #101010;
+  color: #f39a34;
   padding: 20px 30px 20px 0;
   text-align:end;
 }
 .flex {max-width: 100%;}
 
+.about-me {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-height: 20%;
+  background-color: aliceblue;
+}
+.about-me-item-1 {
+  align-self: flex-start;
+  font-size: medium;
+  color: black;
+  max-width: 20%;
+  background-color: rgb(207, 221, 221);
+}
+.about-me-item-2 {
+  object-fit: cover;
+  max-width: 60%;
+  justify-content: right;
+}
+.photo-id {
+  display: block;
+  height: auto;
+  max-width:200px;
+  border-radius: 100%;
+  z-index: 1;
+  justify-content: center;
+  margin-left: 5%;
+}
+
+
+#work {
+  display: grid;
+}
 .grid-container {
   display: grid;
   background-color: black;
@@ -99,8 +122,6 @@ h1 {background-color:rgb(36, 131, 248);
 }
 .grid-item2 {
   grid-area:1/2/2/4;
-  m
-  
 }
 .grid-item3 {
   grid-area:2/2/3/4;
@@ -154,14 +175,7 @@ h1 {background-color:rgb(36, 131, 248);
   z-index: 0;
  
 }
-.photo-id {
-  display: block;
-  height: auto;
-  max-width:200px;
-  border-radius: 100%;
-  z-index: 1;
-  justify-content: center;
-}
+
 
 
 .card1 {
